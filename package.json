@@ -4,6 +4,7 @@
   "description": "Vishal Shahi Bio",
   "main": "webpack.config.js",
   "scripts": {
+    "heroku-postbuild": "npm run build",
     "start": "webpack-dev-server"
   },
   "repository": {
