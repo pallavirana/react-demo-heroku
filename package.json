@@ -4,9 +4,15 @@
   "description": "Vishal Shahi Bio",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "dev": "concurrently \"nodemon -x 'npm start'\" \"npm run dev-server\"",
+    "start": "babel-node server.js",
+    "dev-server": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
+  "proxy": "http://localhost:5000",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uCreate-Vishal/vishalshahi.com.git"
