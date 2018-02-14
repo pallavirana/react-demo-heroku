@@ -4,7 +4,7 @@
   "description": "Vishal Shahi Bio",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "concurrently \"nodemon -x 'npm start'\" \"npm run dev-server\"",
+   "dev": "concurrently \"nodemon -x 'npm start'\" \"npm run dev-server\"",
     "start": "babel-node server.js",
     "dev-server": "react-scripts start",
     "build": "react-scripts build",
@@ -12,7 +12,6 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
-  "proxy": "http://localhost:5000",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uCreate-Vishal/vishalshahi.com.git"
@@ -28,6 +27,7 @@
   },
   "homepage": "https://github.com/uCreate-Vishal/vishalshahi.com#readme",
   "devDependencies": {
+    "react-scripts": "^1.1.0",
     "autoprefixer-loader": "^3.2.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
